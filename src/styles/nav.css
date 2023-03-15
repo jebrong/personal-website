@@ -1,0 +1,13 @@
+.nav-container {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 40vw;
+}
+
+.nav-open {
+  background-color: yellowgreen;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
