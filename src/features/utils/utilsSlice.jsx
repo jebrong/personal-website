@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  openNav: true,
+  openNav: false,
 };
 const utilsSlice = createSlice({
   name: "utils",
@@ -15,5 +15,4 @@ const utilsSlice = createSlice({
 });
 
 export const utilsReducer = utilsSlice.reducer;
-
 export const { toggleNav } = utilsSlice.actions;

@@ -1,6 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import "./nav.css";
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--secondary) inset !important;
+  -webkit-text-fill-color: var(--primary) !important;
+}
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px var(--primary) inset !important;
+  -webkit-text-fill-color: var(--secondary) !important;
+}
+
+:root {
+  /* color-scheme: dark; */
+  --lime: #d6e865;
+  --dark: #0e1111;
+  --accent-1: #e32017;
+  --accent-2: #ffe97f;
+  --accent-1-transparent: #e32117a7;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,9 +33,30 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  color: var(--dark);
+  background-color: var(--lime);
 }
 
 .page-container {
   position: absolute;
   left: 0;
+}
+
+.maintext {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 192px;
+  line-height: 225px;
+  letter-spacing: 0.135em;
+}
+
+.text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 215%;
+
+  letter-spacing: 0.5em;
 }

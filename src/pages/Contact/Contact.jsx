@@ -41,27 +41,25 @@ export default function Contact() {
       exit="exit"
     >
       <div>
-        <div>
-          <div className="title-container">
-            <div className="maintext">CONTACT</div>
-          </div>
-          <div>{status ? "Message Sent!" : ""}</div>
-          <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input ref={username} type="text" name="user_name" />
-            <label>Email</label>
-            <input ref={email} type="email" name="user_email" />
-            <label>Message</label>
-            <textarea ref={message} name="message" />
-            <m.input
-              variants={buttonHoverTap}
-              whileHover="hover"
-              whileTap="tap"
-              type="submit"
-              value="Send"
-            />
-          </form>
+        <div className="title-container">
+          <div className="maintext">CONTACT</div>
         </div>
+        <div>{status ? "Message Sent!" : ""}</div>
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input ref={username} type="text" name="user_name" />
+          <label>Email</label>
+          <input ref={email} type="email" name="user_email" />
+          <label>Message</label>
+          <textarea ref={message} name="message" />
+          <m.input
+            variants={buttonHoverTap}
+            whileHover="hover"
+            whileTap="tap"
+            type="submit"
+            value="Send"
+          />
+        </form>
       </div>
     </m.div>
   );

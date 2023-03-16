@@ -27,6 +27,7 @@ export default function Nav() {
       x: "100%",
       transition: {
         duration: 1.8,
+        delay: 0.5,
         ease: "easeOut",
         type: "spring",
         damping: 20,
@@ -41,6 +42,15 @@ export default function Nav() {
 
       transition: {
         duration: 0.3,
+        ease: "easeOut",
+        type: "spring",
+        damping: 10,
+      },
+    },
+    exit: {
+      y: "100%",
+      transition: {
+        duration: 0.5,
         ease: "easeOut",
         type: "spring",
         damping: 10,
@@ -61,7 +71,7 @@ export default function Nav() {
             className="nav-open"
           >
             <div>
-              <m.div style={{ overflow: "hidden" }}>
+              <m.div style={{ overflow: "hidden" }} className="">
                 <m.h1 style={{ margin: 0, padding: 0 }} variants={navChildren}>
                   MENU*
                 </m.h1>

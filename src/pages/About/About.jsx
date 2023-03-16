@@ -1,29 +1,28 @@
 import Nav from "../../components/Nav";
-import { useSelector, useDispatch } from "react-redux";
-import { AnimatePresence } from "framer-motion";
 
+import NavButton from "../../components/NavButton";
+import { motion as m, AnimatePresence } from "framer-motion";
+import { pageAnimationLeft } from "../../animations/animations";
+import { useSelector, useDispatch } from "react-redux";
 import { toggleNav } from "../../features/utils/utilsSlice";
 
 export default function About() {
   const dispatch = useDispatch();
   const { openNav } = useSelector((store) => store.utils);
+
   return (
-    <div className="page-container">
+    <m.div
+      variants={pageAnimationLeft}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      className="page-container"
+    >
       <Nav></Nav>
-
+      <NavButton></NavButton>
       <div className="title-container">
-        <div className="maintext">JANILLE SY</div>
+        <div className="maintext">ABOUT</div>
       </div>
-
-      <button
-        onClick={(e) => {
-          dispatch(toggleNav());
-        }}
-        className="nav-btn"
-      >
-        TOGGLE NAV
-      </button>
-
       <div className="body-text">
         <div className="text">
           Lorem ipsum dolor sit amet consectetur. Ornare sed odio interdum
@@ -38,6 +37,6 @@ export default function About() {
           enim phasellus at ullamcorper condimentum.
         </div>
       </div>
-    </div>
+    </m.div>
   );
 }
