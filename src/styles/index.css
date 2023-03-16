@@ -13,7 +13,6 @@ input:-webkit-autofill:focus {
 }
 
 :root {
-  /* color-scheme: dark; */
   --lime: #d6e865;
   --dark: #0e1111;
   --accent-1: #e32017;
@@ -40,6 +39,26 @@ body {
 .page-container {
   position: absolute;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  position: relative;
+}
+
+.subtext {
+  font-family: "Roboto";
+  font-style: normal;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.135em;
+  color: #d6e865;
+  background-color: #0e1111;
 }
 
 .maintext {
@@ -59,4 +78,46 @@ body {
   line-height: 215%;
 
   letter-spacing: 0.5em;
+}
+
+.home-nav {
+  margin-top: auto;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.home-nav-item__container {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  background-color: #0e1111;
+  color: #d6e865;
+  border-top: #d6e865 solid 2px;
+}
+
+.home-nav-item__container .text,
+.home-nav-item__container .numb {
+  font-family: "Roboto";
+
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 47px;
+
+  letter-spacing: 0.135em;
+}
+
+.home-nav-item__container .text {
+}
+.home-nav-item__container .numb {
+  margin-left: auto;
+  padding-right: 5vw;
+}
+
+.subtext-2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.135em;
 }

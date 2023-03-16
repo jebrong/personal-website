@@ -17,8 +17,7 @@ export default function Nav() {
       transition: {
         duration: 0.3,
         ease: "easeOut",
-        type: "spring",
-        damping: 20,
+
         delayChildren: 0.4,
         staggerChildren: 0.2,
       },
@@ -72,15 +71,14 @@ export default function Nav() {
           >
             <div>
               <m.div style={{ overflow: "hidden" }} className="">
-                <m.h1 style={{ margin: 0, padding: 0 }} variants={navChildren}>
+                <m.h1
+                  style={{ margin: 0, padding: 0 }}
+                  variants={navChildren}
+                  className="maintext"
+                >
                   MENU*
                 </m.h1>
               </m.div>
-              <AiOutlineClose
-                onClick={() => {
-                  dispatch(toggleNav());
-                }}
-              ></AiOutlineClose>
             </div>
             <div>
               <m.div
