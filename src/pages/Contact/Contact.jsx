@@ -3,7 +3,12 @@ import { motion as m } from "framer-motion";
 import { pageAnimationLeft, buttonHoverTap } from "../../animations/animations";
 
 import emailjs from "@emailjs/browser";
+import Nav from "../../components/Nav";
+import NavButton from "../../components/NavButton";
+import { useNavigate } from "react-router-dom";
+
 export default function Contact() {
+  const navigate = useNavigate();
   const [status, setStatus] = useState(null);
   const form = useRef();
   const username = useRef();
@@ -35,12 +40,27 @@ export default function Contact() {
 
   return (
     <m.div
-      variants={pageAnimationLeft}
-      initial="hidden"
-      animate="show"
-      exit="exit"
+      // variants={pageAnimationLeft}
+      // initial="hidden"
+      // animate="show"
+      // exit="exit"
+      initial={{ x: "-100%" }}
+      animate={{ x: 0 }}
+      exit={{ opacity: 1 }}
+      className="page-container"
+      style={{ backgroundColor: "blue" }}
     >
-      <div>
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          navigate("/about");
+        }}
+      >
+        routes
+      </button>
+      {/* <Nav></Nav>
+      <NavButton></NavButton> */}
+      <div className="">
         <div className="title-container">
           <div className="maintext">CONTACT</div>
         </div>

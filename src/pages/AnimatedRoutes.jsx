@@ -12,8 +12,9 @@ import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 
 export default function AnimatedRoutes(props) {
+  const location = useLocation();
   return (
-    <AnimatePresence initial={false}>
+    <AnimatePresence initial={true}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
