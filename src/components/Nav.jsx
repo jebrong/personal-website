@@ -38,7 +38,6 @@ export default function Nav() {
     hidden: { y: "100%" },
     show: {
       y: 0,
-
       transition: {
         duration: 0.3,
         ease: "easeOut",
@@ -66,7 +65,7 @@ export default function Nav() {
             variants={pageAnimationLeft}
             initial="hidden"
             animate="show"
-            exit="exit"
+            exit={{ x: "100%", transition: { duration: 0.2 } }}
             className="nav-open"
           >
             <div>

@@ -4,12 +4,12 @@
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px var(--secondary) inset !important;
-  -webkit-text-fill-color: var(--primary) !important;
+  -webkit-box-shadow: 0 0 0 30px red inset !important;
+  -webkit-text-fill-color: orange !important;
 }
 input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 30px var(--primary) inset !important;
-  -webkit-text-fill-color: var(--secondary) !important;
+  -webkit-box-shadow: 0 0 0 30px violet inset !important;
+  -webkit-text-fill-color: green !important;
 }
 
 :root {
@@ -122,4 +122,100 @@ body {
   font-size: 42px;
   line-height: 49px;
   letter-spacing: 0.135em;
+}
+
+.contact-form label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 214.69%;
+
+  letter-spacing: 0.5em;
+}
+
+.contact-form input,
+.message__container textarea {
+  padding: 14px;
+  background-color: transparent;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 214.69%;
+  letter-spacing: 0.5em;
+}
+
+.contact-form input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 214.69%;
+  letter-spacing: 0.5em;
+  color: #5a5959;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label-container:first-of-type {
+  margin-right: 20px;
+}
+
+.contact-form input {
+  border: solid 1px black;
+  outline: none;
+  width: 100%;
+}
+.contact-btn {
+  margin-top: 20px;
+}
+
+.name-email__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.message__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.message__container textarea {
+  border: solid 1px black;
+  resize: none;
+
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+}
+
+.title-container {
+  position: relative;
+}
+
+.send-status {
+  position: absolute;
+  bottom: 0;
+  padding: 14px;
+  background-color: transparent;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 214.69%;
+  letter-spacing: 0.5em;
 }

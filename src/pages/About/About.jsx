@@ -32,7 +32,7 @@ export default function About() {
   return (
     <m.div
       initial={{ x: "-100%" }}
-      animate={{ x: 0 }}
+      animate={{ x: 0, transition: { duration: 0.5 } }}
       exit={{ opacity: 1 }}
       style={{ backgroundColor: "red" }}
       className="page-container"
@@ -44,8 +44,8 @@ export default function About() {
       >
         routes
       </button>
-      {/* <Nav></Nav>
-      <NavButton></NavButton> */}
+      <Nav></Nav>
+      <NavButton></NavButton>
       <m.div className="title-container">
         <div className="maintext">ABOUT</div>
       </m.div>
