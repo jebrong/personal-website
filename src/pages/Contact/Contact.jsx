@@ -50,7 +50,6 @@ export default function Contact() {
       animate={{ x: 0, transition: { duration: 0.5 } }}
       exit={{ opacity: 1 }}
       className="page-container"
-      style={{ backgroundColor: "lime" }}
     >
       <button
         onClick={(e) => {
@@ -61,53 +60,63 @@ export default function Contact() {
         routes
       </button>
       <NavButton></NavButton>
-      {/* <AnimatePresence>{openNav ? <Nav></Nav> : ""}</AnimatePresence> */}
+
       <Nav></Nav>
 
       <div className="">
         <div className="title-container">
-          <div className="maintext">contact</div>
-          <div className="send-status">{status ? "Message Sent!" : ""}</div>
-        </div>
-        <form ref={form} onSubmit={sendEmail} className="contact-form">
-          <div className="name-email__container">
-            <div className="label-container">
-              <label>NAME</label>
-              <input
-                ref={username}
-                type="text"
-                name="user_name"
-                placeholder="Input name..."
-              />
+          <div className="others-container">
+            <div className="title">
+              <div className="maintext">"Contact"</div>
+              <div className="send-status">{status ? "Message Sent!" : ""}</div>
             </div>
-            <div className="label-container">
-              <label>EMAIL</label>
-              <input
-                ref={email}
-                type="email"
-                name="user_email"
-                placeholder="Input email..."
-              />
+            <div className="subtext-3">
+              Lorem ipsum dolor sit amet{" "}
+              <span className="colored-span ">This is me</span>. Ornare sed odio
+              interdum adipiscing quis consequat a pulvinar{" "}
             </div>
-          </div>
-          <div className="message__container">
-            <label>MESSAGE</label>
-            <textarea
-              ref={message}
-              name="message"
-              placeholder="Input message"
-            />
           </div>
 
-          <m.input
-            variants={buttonHoverTap}
-            whileHover="hover"
-            whileTap="tap"
-            type="submit"
-            value="SEND"
-            className="contact-btn"
-          />
-        </form>
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
+            <div className="name-email__container">
+              <div className="label-container">
+                <label>NAME</label>
+                <input
+                  ref={username}
+                  type="text"
+                  name="user_name"
+                  placeholder="Input name..."
+                />
+              </div>
+              <div className="label-container">
+                <label>EMAIL</label>
+                <input
+                  ref={email}
+                  type="email"
+                  name="user_email"
+                  placeholder="Input email..."
+                />
+              </div>
+            </div>
+            <div className="message__container">
+              <label>MESSAGE</label>
+              <textarea
+                ref={message}
+                name="message"
+                placeholder="Input message"
+              />
+            </div>
+
+            <m.input
+              variants={buttonHoverTap}
+              whileHover="hover"
+              whileTap="tap"
+              type="submit"
+              value="SEND"
+              className="contact-btn"
+            />
+          </form>
+        </div>
       </div>
     </m.div>
   );

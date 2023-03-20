@@ -68,18 +68,7 @@ export default function Nav() {
             exit={{ x: "100%", transition: { duration: 0.2 } }}
             className="nav-open"
           >
-            <div>
-              <m.div style={{ overflow: "hidden" }} className="">
-                <m.h1
-                  style={{ margin: 0, padding: 0 }}
-                  variants={navChildren}
-                  className="maintext"
-                >
-                  MENU*
-                </m.h1>
-              </m.div>
-            </div>
-            <div>
+            <div className="nav-texts">
               <m.div
                 style={{ overflow: "hidden" }}
                 onClick={() => {
@@ -87,7 +76,7 @@ export default function Nav() {
                   navigate("/");
                 }}
               >
-                <m.div variants={navChildren} className="">
+                <m.div variants={navChildren} className="nav-text">
                   HOME
                 </m.div>
               </m.div>
@@ -98,7 +87,7 @@ export default function Nav() {
                   navigate("/about");
                 }}
               >
-                <m.div variants={navChildren} className="">
+                <m.div variants={navChildren} className="nav-text">
                   ABOUT
                 </m.div>
               </m.div>
@@ -109,8 +98,19 @@ export default function Nav() {
                   navigate("/contact");
                 }}
               >
-                <m.div variants={navChildren} className="">
+                <m.div variants={navChildren} className="nav-text">
                   CONTACT
+                </m.div>
+              </m.div>
+              <m.div
+                style={{ overflow: "hidden" }}
+                onClick={() => {
+                  dispatch(toggleNav());
+                  navigate("/projects");
+                }}
+              >
+                <m.div variants={navChildren} className="nav-text">
+                  PROJECTS
                 </m.div>
               </m.div>
             </div>

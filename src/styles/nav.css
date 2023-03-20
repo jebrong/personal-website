@@ -4,11 +4,34 @@
   z-index: 20;
 }
 
+.nav-container::before {
+  content: "Sy";
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1274px;
+  line-height: 1493px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  opacity: 0.05;
+  position: absolute;
+  top: -202px;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .nav-open {
-  background-color: yellowgreen;
+  background: #dc5f00;
   padding: 20px;
   height: 100vh;
   width: 100vw;
+}
+
+.nav-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .menu {
@@ -18,15 +41,27 @@
   z-index: 50;
 }
 
+.nav-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 192px;
+  line-height: 175px;
+  /* identical to box height */
+
+  letter-spacing: -0.005em;
+  z-index: 22;
+}
+
 .menu div {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   position: relative;
 }
 .menu span {
   background-color: #0e1111;
   width: 100%;
-  height: 10px;
+  height: 5px;
   border-radius: 5px;
   display: block;
   position: absolute;
@@ -38,7 +73,7 @@
 
 .menu .line-1 {
   width: 50%;
-  transform: translate(-100%, -50px);
+  transform: translate(-100%, -30px);
   transform-origin: 0 0;
 }
 
@@ -46,7 +81,7 @@
   width: 50%;
   left: auto;
   right: 0;
-  transform: translate(0, 40px);
+  transform: translate(0, 20px);
   transform-origin: 100% 0;
 }
 
