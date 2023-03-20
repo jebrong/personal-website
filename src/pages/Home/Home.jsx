@@ -21,36 +21,46 @@ export default function Home() {
         <div className="c-text">©2023</div>
         <div className="subtext-2">*web-developer/frontend/backend/</div>
       </div>
-      <div className="home-nav">
-        <div
-          className="home-nav-item__container"
-          onClick={() => {
-            navigate("/about");
-          }}
-        >
-          <div className="text">"ABOUT"</div>
-          <div className="numb">01</div>
-        </div>
-        <div
-          className="home-nav-item__container"
-          onClick={() => {
-            navigate("/projects");
-          }}
-        >
-          <div className="text-container">
-            <div className="text">"PROJECTS"</div>
-            <div className="text-small">[SELECTED WORKS]</div>
+
+      <div className="home-box-nav">
+        <div className="box-wrapper">
+          <div className="box-container">
+            <div className="box-primary"></div>
+            <div className="box-secondary-1"></div>
+            <div className="box-secondary-2"></div>
           </div>
-          <div className="numb">02</div>
         </div>
-        <div
-          className="home-nav-item__container"
-          onClick={() => {
-            navigate("/contact");
-          }}
-        >
-          <div className="text">"CONTACT"</div>
-          <div className="numb">03</div>
+        <div className="home-nav">
+          <div
+            className="home-nav-item__container"
+            onClick={() => {
+              navigate("/about");
+            }}
+          >
+            <div className="text">"ABOUT"</div>
+            <div className="numb">01</div>
+          </div>
+          <div
+            className="home-nav-item__container"
+            onClick={() => {
+              navigate("/projects");
+            }}
+          >
+            <div className="text-container">
+              <div className="text">"PROJECTS"</div>
+              <div className="text-small">[SELECTED WORKS]</div>
+            </div>
+            <div className="numb">02</div>
+          </div>
+          <div
+            className="home-nav-item__container"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            <div className="text">"CONTACT"</div>
+            <div className="numb">03</div>
+          </div>
         </div>
       </div>
     </m.div>
