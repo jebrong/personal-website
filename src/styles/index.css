@@ -48,6 +48,11 @@ body {
   background-color: #eeeeee;
 }
 
+.page-body {
+  padding: 0 120px;
+  padding-top: 50px;
+}
+
 .page-container::before {
   content: "Sy";
   font-family: "Roboto";
@@ -65,10 +70,10 @@ body {
 
 .title-container {
   position: relative;
-  margin-top: 80px;
-  margin-left: 50px;
-
-  margin-right: 50px;
+}
+.title-container.home {
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
 .others-container {
@@ -342,10 +347,6 @@ form {
   width: 100%;
   max-width: 1800px;
   padding: 20px;
-}
-
-.title-container {
-  position: relative;
 }
 
 .send-status {

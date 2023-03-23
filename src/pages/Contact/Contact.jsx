@@ -51,19 +51,11 @@ export default function Contact() {
       exit={{ opacity: 1 }}
       className="page-container"
     >
-      <button
-        onClick={(e) => {
-          e.preventDefault();
-          navigate("/about");
-        }}
-      >
-        routes
-      </button>
       <NavButton></NavButton>
 
       <Nav></Nav>
 
-      <div className="">
+      <div className="page-body">
         <div className="title-container">
           <div className="others-container">
             <div className="title">

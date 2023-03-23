@@ -12,7 +12,7 @@ export default function Home() {
       exit={{ opacity: 1 }}
       className="page-container"
     >
-      <div className="title-container">
+      <div className="title-container home">
         <div className="subtext">architect</div>
         <div className="maintext-container">
           <div className="maintext">JANILLE SY</div>
