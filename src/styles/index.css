@@ -414,3 +414,9 @@ form {
   background-color: #dc5f00;
   padding: 8px;
 }
+
+.image-container img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}

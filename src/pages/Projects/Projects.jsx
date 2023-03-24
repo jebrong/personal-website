@@ -6,8 +6,14 @@ import { motion as m, AnimatePresence } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleNav } from "../../features/utils/utilsSlice";
 import { useNavigate } from "react-router-dom";
-import { projects } from "../../data/projects";
+
+import { findProject } from "../../features/utils/utilsSlice";
+
 export default function Projects() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { allProjects, singleProject } = useSelector((store) => store.utils);
+
   return (
     <m.div
       initial={{ x: "-100%" }}
@@ -32,9 +38,16 @@ export default function Projects() {
           </div>
         </div>
         <div className="proj-container">
-          {projects.map((project, index) => {
+          {allProjects.map((project, index) => {
             return (
-              <div key={index} className="proj-item-container">
+              <div
+                key={project.id}
+                className="proj-item-container"
+                onClick={() => {
+                  dispatch(findProject(project.id));
+                  navigate("/projects/" + project.id);
+                }}
+              >
                 <div className="proj-item-main first">{index + 1}</div>
                 <div className="proj-item-title">{project.title}</div>
                 <div className="proj-item-subtext">{project.desc}</div>
