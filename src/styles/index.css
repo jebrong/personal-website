@@ -404,8 +404,7 @@ form {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 214.69%;
-
+  line-height: 215%;
   text-align: center;
   letter-spacing: 0.5em;
 }
@@ -415,8 +414,166 @@ form {
   padding: 8px;
 }
 
+.page-container.single {
+  overflow-y: visible;
+}
+
+.images-container {
+  display: flex;
+  margin: 20px 0;
+}
+
 .image-container img {
   height: 200px;
   width: 200px;
   object-fit: cover;
+}
+
+.image-container.selected img {
+  border: 2px red solid;
+}
+.selected-image-container {
+  position: relative;
+}
+
+.selected-image {
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
+}
+
+.image-btn {
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  border: none;
+}
+.image-btn.back {
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0) 85%
+  );
+  transition: all 0.5s;
+}
+
+.image-btn.next {
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  transition: all 0.5s;
+}
+
+.image-btn.back:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 85%
+  );
+  transition: all 0.5s;
+}
+
+.image-btn.next:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  transition: all 0.5s;
+}
+
+.arrow-btn {
+  color: white;
+  font-size: 44px;
+}
+
+.single-project-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.single-project-title {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 112px;
+
+  letter-spacing: -0.005em;
+
+  color: #0e1111;
+}
+
+.single-project-links-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.single-project-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.135em;
+  color: #eeeeee;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.single-project-link.site {
+  background-color: #0e1111;
+  margin-bottom: 12px;
+}
+.single-project-link.git {
+  background-color: #dc5f00;
+}
+
+.single-project-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 215%;
+  text-align: justify;
+
+  letter-spacing: 0.5em;
+
+  color: #0e1111;
+}
+
+.back {
+  font-size: 76px;
+
+  letter-spacing: -0.005em;
+
+  color: #dc5f00;
+  overflow: hidden;
+  width: 96px;
+}
+
+.tag {
+  font-weight: 400;
+  font-size: 12px;
+  color: #eeeeee;
+  background-color: #dc5f00;
+  margin-right: 12px;
+  padding: 0 2px;
+  display: inline-block;
+  letter-spacing: 0.5em;
+}
+
+.tag-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.135em;
+
+  margin-right: 12px;
+  margin-bottom: 12px;
+  display: inline-block;
+  letter-spacing: 0.5em;
+}
+
+.tag-container {
+  margin-bottom: 40px;
 }

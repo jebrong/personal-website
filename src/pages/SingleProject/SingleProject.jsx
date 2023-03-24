@@ -6,6 +6,8 @@ import { motion as m, AnimatePresence } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleNav } from "../../features/utils/utilsSlice";
 import { useNavigate, Navigate } from "react-router-dom";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { ImArrowLeft2 } from "react-icons/im";
 
 import {
   findProject,
@@ -26,27 +28,15 @@ export default function Projects() {
       initial={{ x: "-100%" }}
       animate={{ x: 0, transition: { duration: 0.5 } }}
       exit={{ opacity: 1 }}
-      className="page-container"
+      className="page-container single"
     >
-      <button
-        onClick={() => {
-          dispatch(prevSingleImage());
-        }}
-      >
-        back
-      </button>
-      <button
-        onClick={() => {
-          dispatch(nextSingleImage());
-        }}
-      >
-        next
-      </button>
       <Nav></Nav>
       <NavButton></NavButton>
-      <div className="page-body">
+      <div className="page-body ">
         <div className="single-proj-container">
-          <div className="back">back</div>
+          <div className="back" onClick={() => navigate("/projects")}>
+            <ImArrowLeft2></ImArrowLeft2>
+          </div>
           {/* title and links */}
           <div className="single-project-title-container">
             <div className="single-project-title">{singleProject.title}</div>
@@ -55,25 +45,40 @@ export default function Projects() {
                 className="single-project-link site"
                 href="https://www.google.com/"
               >
-                Site
+                visit site
               </a>
               <a
                 className="single-project-link git"
                 href="https://www.google.com/"
               >
-                Git
+                visit github
               </a>
             </div>
           </div>
+
           {/* desc */}
-          <div className="proj-item-subtext">{singleProject.desc}</div>
+          <div className="tag-container">
+            <span className="tag-title">TAGS:</span>
+            {singleProject.tags.map((tag, index) => {
+              return (
+                <div className="tag" key={index}>
+                  {tag}
+                </div>
+              );
+            })}
+          </div>
+          <div className="single-project-desc">{singleProject.desc}</div>
 
           {/* images */}
           <div className="images-container">
             {singleImages.map((image, index) => {
               return (
                 <div
-                  className="image-container"
+                  className={
+                    image === selectedImage
+                      ? "image-container selected"
+                      : "image-container"
+                  }
                   key={index}
                   onClick={() => {
                     dispatch(clickSingleImage(image));
@@ -86,9 +91,26 @@ export default function Projects() {
           </div>
 
           {/* selected image */}
-          {/* <div className="selected-image"> */}
-          <img src={selectedImage} alt="gag" />
-          {/* </div> */}
+
+          <div className="selected-image-container">
+            <img src={selectedImage} alt="" className="selected-image" />
+            <button
+              className="image-btn back"
+              onClick={() => {
+                dispatch(prevSingleImage());
+              }}
+            >
+              <AiOutlineLeft className="arrow-btn" />
+            </button>
+            <button
+              className="image-btn next"
+              onClick={() => {
+                dispatch(nextSingleImage());
+              }}
+            >
+              <AiOutlineRight className="arrow-btn" />
+            </button>
+          </div>
         </div>
       </div>
     </m.div>
