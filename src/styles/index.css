@@ -83,6 +83,7 @@ body {
 }
 
 .subtext-3 {
+  margin-top: 10px;
   width: 500px;
   text-align: right;
   font-size: 12px;
@@ -273,7 +274,7 @@ contact-form {
 }
 
 .contact-form input,
-.message__container textarea {
+.message-container textarea {
   padding: 14px;
   background-color: transparent;
   font-family: "Roboto";
@@ -326,12 +327,12 @@ input.contact-btn {
   align-items: center;
 }
 
-.message__container {
+.message-container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.message__container textarea {
+.message-container textarea {
   border: solid 1px black;
   resize: none;
 
@@ -576,4 +577,187 @@ form {
 
 .tag-container {
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 435px) {
+  .subtext {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 2px;
+  }
+  .maintext {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 65px;
+    letter-spacing: -0.005em;
+  }
+  .tm-text {
+    font-size: 17px;
+    line-height: 16px;
+    padding-left: 6px;
+    align-self: center;
+  }
+  .c-text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .subtext-2 {
+    font-size: 18px;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+  .title-container.home {
+    padding-top: 50px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .home-box-nav {
+    flex-direction: column-reverse;
+  }
+
+  .home-box-nav {
+    align-self: start;
+  }
+
+  .home-nav {
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .home-nav-item__container .text,
+  .home-nav-item__container .numb {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .home-nav-item__container .text {
+    padding-left: 5vw;
+  }
+
+  .text-small {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  .home-nav-item__container {
+    width: 95vw;
+  }
+
+  .home-box-nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100vw;
+  }
+
+  .box-wrapper {
+    min-height: 400px;
+  }
+
+  .page-body {
+    padding: 0 10px;
+    padding-top: 50px;
+  }
+
+  .others-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .others-container .subtext-3 {
+    text-align: left;
+    width: 100%;
+    font-size: 9px;
+    line-height: 300%;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .body-text {
+    margin-top: 30px;
+  }
+
+  .contact-form {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .label-container label,
+  .message-container label {
+    font-size: 12px;
+  }
+
+  .label-container input,
+  .contact-form input::placeholder,
+  .message-container textarea,
+  .message-container textarea::placeholder {
+    font-size: 12px;
+  }
+  .message-container textarea {
+    height: 300px;
+  }
+
+  input.contact-btn {
+    font-size: 14px;
+  }
+
+  .proj-container {
+    flex-direction: column;
+  }
+
+  .proj-item-container {
+    display: flex;
+    padding: 0px;
+    border-bottom: solid black 1px;
+    align-items: center;
+  }
+  .proj-item-subtext {
+    padding-left: 6px;
+    font-size: 11px;
+    line-height: 150%;
+    text-align: left;
+    letter-spacing: 0.2em;
+  }
+
+  .proj-item-subtext .colored-span {
+    padding: 1px;
+  }
+
+  .image-container img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+  .selected-image {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+  }
+
+  .single-project-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .single-project-links-container {
+    margin: 0px;
+  }
+  .tag-container {
+    margin-top: 10px;
+  }
+  .tag {
+    font-size: 10px;
+
+    margin-right: 4px;
+    padding: 0 2px;
+    display: inline-block;
+    letter-spacing: 0.5em;
+  }
+  .tag-title {
+    margin-right: 2px;
+  }
+  .page-container::before {
+    font-size: 574px;
+    line-height: 593px;
+    top: 0px;
+  }
 }

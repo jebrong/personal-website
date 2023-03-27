@@ -90,7 +90,7 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <div className="message__container">
+            <div className="message-container">
               <label>MESSAGE</label>
               <textarea
                 ref={message}

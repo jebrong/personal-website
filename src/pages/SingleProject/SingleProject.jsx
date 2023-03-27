@@ -41,16 +41,10 @@ export default function Projects() {
           <div className="single-project-title-container">
             <div className="single-project-title">{singleProject.title}</div>
             <div className="single-project-links-container">
-              <a
-                className="single-project-link site"
-                href="https://www.google.com/"
-              >
+              <a className="single-project-link site" href={singleProject.site}>
                 visit site
               </a>
-              <a
-                className="single-project-link git"
-                href="https://www.google.com/"
-              >
+              <a className="single-project-link git" href={singleProject.git}>
                 visit github
               </a>
             </div>

@@ -15,8 +15,7 @@ export default function Home() {
       <div className="title-container home">
         <div className="subtext">architect</div>
         <div className="maintext-container">
-          <div className="maintext">JANILLE SY</div>
-          <div className="tm-text">TM</div>
+          <div className="maintext">JANILLE SY </div>
         </div>
         <div className="c-text">©2023</div>
         <div className="subtext-2">*web-developer/frontend/backend/</div>
