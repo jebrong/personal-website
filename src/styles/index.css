@@ -579,6 +579,26 @@ form {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 1366px) {
+  .subtext {
+    font-size: 26px;
+    padding: 2px;
+  }
+  .maintext {
+    margin-top: 20px;
+    font-size: 112px;
+    line-height: 95px;
+    letter-spacing: -0.005em;
+  }
+  .proj-item-subtext {
+    padding-left: 6px;
+    font-size: 11px;
+    line-height: 250%;
+
+    letter-spacing: 0.2em;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .c-text {
     padding-top: 20px;
