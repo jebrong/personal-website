@@ -101,7 +101,7 @@ body {
   font-weight: 400;
   font-size: 42px;
   line-height: 49px;
-  letter-spacing: 0.135em;
+  letter-spacing: 0.5em;
   color: #eeeeee;
   background-color: #dc5f00;
   padding: 5px;
@@ -579,6 +579,140 @@ form {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .c-text {
+    padding-top: 20px;
+  }
+  .subtext {
+    font-size: 26px;
+
+    padding: 2px;
+  }
+
+  .maintext {
+    margin-top: 20px;
+    font-size: 112px;
+    line-height: 95px;
+    letter-spacing: -0.005em;
+  }
+  .tm-text {
+    font-size: 32px;
+    line-height: 16px;
+    padding-left: 6px;
+    align-self: center;
+  }
+
+  .home-box-nav {
+    flex-direction: column-reverse;
+  }
+
+  .home-box-nav {
+    align-self: start;
+  }
+
+  .home-nav {
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .home-nav-item__container .text,
+  .home-nav-item__container .numb {
+    font-size: 36px;
+    line-height: 27px;
+  }
+
+  .home-nav-item__container .text {
+    padding-left: 5vw;
+  }
+
+  .text-small {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .home-nav-item__container {
+    width: 95vw;
+    padding: 40px 0px;
+  }
+
+  .home-box-nav {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    width: 100vw;
+  }
+
+  .box-wrapper {
+    min-height: 400px;
+  }
+
+  .others-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .others-container .subtext-3 {
+    text-align: left;
+    width: 100%;
+    font-size: 9px;
+    line-height: 300%;
+  }
+  .label-container input,
+  .contact-form input::placeholder,
+  .message-container textarea,
+  .message-container textarea::placeholder,
+  .contact-form label {
+    font-size: 12px;
+  }
+  .message-container textarea {
+    height: 400px;
+  }
+  .page-body {
+    padding: 0 20px;
+    padding-top: 50px;
+  }
+
+  .others-container .subtext-3 {
+    font-size: 12px;
+  }
+  .contact-form {
+    padding: 0px;
+  }
+
+  .text {
+    font-size: 17px;
+  }
+  .body-text {
+    margin-top: 30px;
+  }
+
+  .proj-container {
+    flex-direction: column;
+  }
+
+  .proj-item-container {
+    display: flex;
+    padding: 0px;
+    border-bottom: solid black 1px;
+    align-items: center;
+  }
+  .proj-item-subtext {
+    padding-left: 16px;
+    font-size: 11px;
+    line-height: 150%;
+    text-align: left;
+    letter-spacing: 0.2em;
+  }
+
+  .proj-item-subtext .colored-span {
+    padding: 1px;
+  }
+
+  .image-container img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+}
+
 @media only screen and (max-width: 435px) {
   .subtext {
     font-size: 16px;
@@ -586,10 +720,7 @@ form {
     padding: 2px;
   }
   .maintext {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 62px;
+    font-size: 59px;
     line-height: 65px;
     letter-spacing: -0.005em;
   }
@@ -687,12 +818,6 @@ form {
     font-size: 12px;
   }
 
-  .label-container input,
-  .contact-form input::placeholder,
-  .message-container textarea,
-  .message-container textarea::placeholder {
-    font-size: 12px;
-  }
   .message-container textarea {
     height: 300px;
   }
