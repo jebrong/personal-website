@@ -139,3 +139,17 @@ export const cardAnimateTexts = {
     },
   },
 };
+
+export const v1Logo = {
+  show: {
+    scale: [1.1, 1, 1.1],
+    x: ["0%", "10%", "0%"],
+    y: ["0%", "10%", "0%"],
+    transition: { ease: "linear", duration: 3, repeat: Infinity },
+  },
+
+  tap: {
+    scale: 0.9,
+    transition: { duration: 0.2 },
+  },
+};
