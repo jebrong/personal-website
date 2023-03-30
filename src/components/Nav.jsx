@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion as m, AnimatePresence } from "framer-motion";
-// import { pageAnimationLeft, buttonHoverTap } from "../animations/animations";
+import { pageAnimationLeft, buttonHoverTap } from "../animations/animations";
 import { toggleNav } from "../features/utils/utilsSlice";
 
 export default function Nav() {
@@ -75,9 +75,12 @@ export default function Nav() {
                   dispatch(toggleNav());
                   navigate("/");
                 }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+                whileTap={{ scale: 0.95 }}
               >
-                <m.div variants={navChildren} className="nav-text">
-                  HOME
+                <m.div variants={navChildren} className="nav-text-container">
+                  <m.div className="nav-text">HOME</m.div>
+                  <m.div className="nav-text-underline"></m.div>
                 </m.div>
               </m.div>
               <m.div
@@ -86,9 +89,11 @@ export default function Nav() {
                   dispatch(toggleNav());
                   navigate("/about");
                 }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               >
-                <m.div variants={navChildren} className="nav-text">
-                  ABOUT
+                <m.div variants={navChildren} className="nav-text-container">
+                  <m.div className="nav-text">ABOUT</m.div>
+                  <m.div className="nav-text-underline"></m.div>
                 </m.div>
               </m.div>
               <m.div
@@ -97,9 +102,11 @@ export default function Nav() {
                   dispatch(toggleNav());
                   navigate("/contact");
                 }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               >
-                <m.div variants={navChildren} className="nav-text">
-                  CONTACT
+                <m.div variants={navChildren} className="nav-text-container">
+                  <m.div className="nav-text">CONTACT</m.div>
+                  <m.div className="nav-text-underline"></m.div>
                 </m.div>
               </m.div>
               <m.div
@@ -108,9 +115,11 @@ export default function Nav() {
                   dispatch(toggleNav());
                   navigate("/projects");
                 }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               >
-                <m.div variants={navChildren} className="nav-text">
-                  PROJECTS
+                <m.div variants={navChildren} className="nav-text-container">
+                  <m.div className="nav-text">PROJECTS</m.div>
+                  <m.div className="nav-text-underline"></m.div>
                 </m.div>
               </m.div>
             </div>

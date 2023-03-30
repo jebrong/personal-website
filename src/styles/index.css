@@ -12,14 +12,6 @@ input:-webkit-autofill:focus {
   -webkit-text-fill-color: green !important;
 }
 
-:root {
-  --lime: #d6e865;
-  --dark: #0e1111;
-  --accent-1: #e32017;
-  --accent-2: #ffe97f;
-  --accent-1-transparent: #e32117a7;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -149,13 +141,43 @@ body {
   align-items: center;
 }
 
+/* for animation */
+.text-wrapper {
+  position: relative;
+  overflow-y: hidden;
+  height: 50px;
+  min-width: 220px;
+}
+
+.text.display {
+  position: absolute;
+  top: 0;
+}
+
+.text.underline {
+  bottom: -1px;
+  height: 7px;
+  border-radius: 2px;
+  width: 0;
+  position: absolute;
+  background-color: #dc5f00;
+}
+
+.home-nav-item__container:hover .text.underline {
+  width: 100%;
+  transition: all 0.5s;
+}
+.home-nav-item__container:hover .numb-container {
+  background-color: #dc5f00;
+  transition: all 0.5s;
+}
+
 .text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 215%;
-
   letter-spacing: 0.5em;
 }
 
@@ -171,6 +193,9 @@ body {
 
 .home-nav {
   align-self: flex-end;
+
+  margin-top: auto;
+  margin-bottom: 200px;
 }
 
 .home-nav-item__container {
@@ -195,18 +220,28 @@ body {
 
 .home-nav-item__container .text {
 }
-.home-nav-item__container .numb {
+.home-nav-item__container .numb-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
-  padding-right: 5vw;
+  margin-right: 5vw;
+  border-radius: 50%;
+  padding: 12px;
 }
 
 .home-box-nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-
+  flex-grow: 1;
+  /* 
   margin-top: auto;
-  margin-bottom: 200px;
+  margin-bottom: 200px; */
+}
+
+.text-span {
+  display: inline-block;
 }
 
 .box-wrapper {
@@ -235,8 +270,8 @@ body {
   width: 330px;
   background-color: #dc5f00;
   position: absolute;
-  right: -100px;
-  bottom: -100px;
+  right: -50px;
+  bottom: -50px;
 }
 .box-primary {
   height: 380px;
@@ -623,7 +658,7 @@ form {
     width: 220px;
   }
   .box-wrapper {
-    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -632,6 +667,12 @@ form {
     padding-top: 20px;
   }
   .subtext {
+    font-size: 26px;
+
+    padding: 2px;
+  }
+
+  .subtext-2 {
     font-size: 26px;
 
     padding: 2px;

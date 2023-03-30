@@ -153,12 +153,6 @@ export default function Contact() {
               type="submit"
               value="SEND"
               className="contact-btn"
-              onMouseEnter={() => {
-                setText("zoom");
-              }}
-              onMouseLeave={() => {
-                setText("show");
-              }}
             />
           </form>
         </div>

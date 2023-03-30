@@ -56,6 +56,21 @@
 
   letter-spacing: -0.005em;
   z-index: 22;
+  position: relative;
+}
+
+.nav-text-underline {
+  background-color: rgba(255, 255, 255, 0.276);
+  height: 50px;
+  width: 0px;
+  position: absolute;
+  top: 50px;
+  transition: width 0.5s;
+}
+.nav-texts div:hover .nav-text-underline {
+  width: 1200px;
+
+  transition: width 0.5s;
 }
 
 .menu div {

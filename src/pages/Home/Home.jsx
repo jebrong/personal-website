@@ -2,42 +2,14 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion as m, AnimatePresence } from "framer-motion";
-import { v1Logo } from "../../animations/animations";
+import { v1Logo, buttonHoverTap } from "../../animations/animations";
 
 import { useState, useEffect } from "react";
 import Cursor from "../../components/Cursor";
 
 export default function Home() {
   const navigate = useNavigate();
-
-  const [mouseXY, setMouseXY] = useState({ x: -50, y: -50 });
-  const [text, setText] = useState("show");
-
-  const mouseAnimate = {
-    show: {
-      x: mouseXY.x - 16,
-      y: mouseXY.y - 16,
-    },
-    zoom: {
-      height: 150,
-      width: 150,
-      x: mouseXY.x - 75,
-      y: mouseXY.y - 75,
-
-      backgroundColor: "#eeeeee",
-      mixBlendMode: "difference",
-    },
-  };
-
-  useEffect(() => {
-    const findMouseXY = (e) => {
-      setMouseXY({ x: e.clientX, y: e.clientY });
-    };
-    window.addEventListener("mousemove", findMouseXY);
-    return () => {
-      window.removeEventListener("mousemove", findMouseXY);
-    };
-  }, [mouseXY]);
+  const name = "JanilleSy".split("");
 
   return (
     <m.div
@@ -49,41 +21,32 @@ export default function Home() {
       <div className="title-container home">
         <div className="subtext">architect</div>
         <div className="maintext-container">
-          <div
-            className="maintext"
-            onMouseEnter={() => {
-              setText("zoom");
-            }}
-            onMouseLeave={() => {
-              setText("show");
-            }}
-          >
-            JANILLE SY
+          <div className="maintext">
+            {name.map((letter, index) => {
+              return (
+                <m.span
+                  key={index}
+                  className="text-span"
+                  whileHover={{
+                    transform: [
+                      "scale3d(1,1,1)",
+                      "scale3d(1.4,.55,1)",
+                      "scale3d(.75,1.25,1)",
+                      "scale3d(1.25,0.85,1)",
+                      "scale3d(.9,1.05,1)",
+                      "scale3d(1,1,1)",
+                    ],
+                  }}
+                >
+                  {letter}
+                </m.span>
+              );
+            })}
           </div>
-          <span
-            className="tm-text"
-            onMouseEnter={() => {
-              setText("zoom");
-            }}
-            onMouseLeave={() => {
-              setText("show");
-            }}
-          >
-            TM
-          </span>
+          <span className="tm-text">TM</span>
         </div>
         <div className="c-text">©2023</div>
-        <div
-          className="subtext-2"
-          onMouseEnter={() => {
-            setText("zoom");
-          }}
-          onMouseLeave={() => {
-            setText("show");
-          }}
-        >
-          *web-developer/frontend/backend/
-        </div>
+        <div className="subtext-2">*web-developer/frontend/backend/</div>
       </div>
 
       <div className="home-box-nav">
@@ -92,7 +55,7 @@ export default function Home() {
             <m.div
               className="box-primary"
               variants={v1Logo}
-              // animate="show"
+              animate="show"
               whileTap="tap"
               drag
               dragConstraints={{
@@ -104,77 +67,89 @@ export default function Home() {
             >
               <h1 className="text">"move"</h1>
             </m.div>
-            <div className="box-secondary-1"></div>
-            <div className="box-secondary-2"></div>
+            <m.div
+              className="box-secondary-1"
+              variants={v1Logo}
+              animate="show"
+              whileTap="tap"
+              drag
+              dragConstraints={{
+                top: -10,
+                left: -10,
+                right: 10,
+                bottom: 10,
+              }}
+            ></m.div>
+            <m.div
+              className="box-secondary-2"
+              variants={v1Logo}
+              animate="show"
+              whileTap="tap"
+              drag
+              dragConstraints={{
+                top: -10,
+                left: -10,
+                right: 10,
+                bottom: 10,
+              }}
+            ></m.div>
           </div>
         </div>
         <div className="home-nav">
-          <div
+          <m.div
             className="home-nav-item__container"
             onClick={() => {
               navigate("/about");
             }}
-            onMouseEnter={() => {
-              setText("zoom");
-            }}
-            onMouseLeave={() => {
-              setText("show");
-            }}
+            variants={buttonHoverTap}
+            whileHover="hover"
+            whileTap="tap"
           >
-            <div className="text">"ABOUT"</div>
-            <div className="numb">01</div>
-          </div>
-          <div
+            <div className="text-wrapper">
+              <div className="text display home">"ABOUT"</div>
+              <div className="text underline"></div>
+            </div>
+            <div className="numb-container">
+              <div className="numb">01</div>
+            </div>
+          </m.div>
+          <m.div
             className="home-nav-item__container"
             onClick={() => {
               navigate("/projects");
             }}
-            onMouseEnter={() => {
-              setText("zoom");
-            }}
-            onMouseLeave={() => {
-              setText("show");
-            }}
+            variants={buttonHoverTap}
+            whileHover="hover"
+            whileTap="tap"
           >
-            <div className="text-container">
+            <div className="text-container text-wrapper">
               <div className="text">"PROJECTS"</div>
+              <div className="text underline"></div>
               <div className="text-small">[SELECTED WORKS]</div>
             </div>
-            <div className="numb">02</div>
-          </div>
-          <div
+            <div className="numb-container">
+              <div className="numb">02</div>
+            </div>
+          </m.div>
+          <m.div
             className="home-nav-item__container"
             onClick={() => {
               navigate("/contact");
             }}
-            onMouseEnter={() => {
-              setText("zoom");
-            }}
-            onMouseLeave={() => {
-              setText("show");
-            }}
+            variants={buttonHoverTap}
+            whileHover="hover"
+            whileTap="tap"
           >
-            <div className="text">"CONTACT"</div>
-            <div className="numb">03</div>
-          </div>
+            <div className="text-wrapper">
+              <div className="text">"CONTACT"</div>
+              <div className="text underline"></div>
+            </div>
+            <div className="numb-container">
+              <div className="numb">03</div>
+            </div>
+          </m.div>
         </div>
       </div>
-
-      {/* cursors */}
-      <m.div variants={mouseAnimate} animate={text} className="cursor"></m.div>
-      {text === "show" && (
-        <m.div
-          animate={{
-            x: mouseXY.x - 50,
-            y: mouseXY.y - 50,
-            transition: {
-              type: "spring",
-              damping: 8,
-            },
-          }}
-          className="cursor-2"
-        ></m.div>
-      )}
     </m.div>
   );
 }
