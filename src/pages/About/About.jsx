@@ -16,6 +16,25 @@ export default function About() {
 
   const [mouseXY, setMouseXY] = useState({ x: -50, y: -50 });
   const [text, setText] = useState("show");
+  const toolkit = [
+    "html",
+    "css",
+    "javascript",
+    "react",
+    "typescript",
+    "nodeJS",
+    "express",
+    "mongoDB",
+    "postman",
+    "git",
+    "sass",
+    "framer-motion",
+    "tailwind",
+    "bootstrap",
+    "vite",
+    "figma",
+    "photoshop",
+  ];
 
   const mouseAnimate = {
     show: {
@@ -48,7 +67,7 @@ export default function About() {
       initial={{ x: "-100%" }}
       animate={{ x: 0, transition: { duration: 0.5 } }}
       exit={{ opacity: 1 }}
-      className="page-container"
+      className="page-container about"
     >
       <Nav></Nav>
       <NavButton></NavButton>
@@ -91,19 +110,81 @@ export default function About() {
             onMouseLeave={() => {
               setText("show");
             }}
-            className="text"
+            className="text about"
           >
-            Lorem ipsum dolor sit amet consectetur. Ornare sed odio interdum
-            adipiscing quis consequat a pulvinar euismod. Egestas vitae in nec
-            nibh. Blandit nulla ullamcorper nullam nunc et.
-            <span className="colored-span">React</span> Interdum semper
-            facilisis neque sagittis tellus sagittis feugiat. Ac morbi ipsum leo
-            eu maecenas. Placerat nisi nec ut erat in facilisi amet pretium
-            suscipit. Ut non elit felis viverra id morbi nec hendrerit gravida.
-            Lectus pellentesque erat nulla neque. Velit cras dapibus urna
-            commodo ac in fusce semper nunc. Vel eu nunc pulvinar mattis sem
-            varius. Faucibus vulputate nunc adipiscing urna sit integer nunc
-            hac. Gravida enim phasellus at ullamcorper condimentum.
+            <p>
+              As a licensed architect with a passion for technology, I am now
+              proudly paving the way to pursue a career in{" "}
+              <span className="colored-span">web development</span> . Throughout
+              my training and professional experience, I have developed a{" "}
+              <span className="colored-span">
+                meticulous eye for detail, an aptitude for problem-solving, and
+                a creative approach to design,
+              </span>
+              which I believe is highly applicable to web development. I am
+              eager to take on new challenges and expand my skillset in a field
+              that combines my technical expertise with my imaginative spirit.
+              Through my work, I aim to create
+              <span className="colored-span">
+                innovative and user-friendly digital solutions{" "}
+              </span>{" "}
+              that are both aesthetically pleasing and functionally sound.
+            </p>
+            <p>
+              With my background in design, I found that I had a natural
+              inclination towards the creative and technical aspects of web
+              development. I started to teach myself how to code, exploring
+              different programming languages, frameworks, and databases. I even
+              began working on my own projects, building websites and apps for
+              friends and family.
+            </p>
+
+            <p>
+              As I further immersed myself in web development, I began to
+              appreciate the similarities between architecture and coding. Both
+              require{" "}
+              <span className="colored-span">
+                a keen eye for detail, problem-solving skills, and the ability
+                to bring complex ideas to life.
+              </span>
+              I also found that my skills in{" "}
+              <span className="colored-span">
+                project management, team collaboration, and client communication
+              </span>
+              were transferrable to the tech industry.
+            </p>
+
+            <p>
+              Today, I am a licensed architect pursuing a career in web
+              development. I lean to work as a{" "}
+              <span className="colored-span">front-end developer </span> ,
+              focusing on creating
+              <span className="colored-span">
+                user-friendly websites, elegant designs, and top-notch user
+                experiences.
+              </span>
+              I am passionate about using my knowledge and skills to create
+              digital solutions that not only look aesthetically pleasing but
+              also function seamlessly and drive results for my clients.
+            </p>
+            <p>
+              My journey from architecture to web development has been a
+              challenging yet fulfilling one. I am excited to see where this
+              path takes me and look forward to contributing to the
+              ever-evolving world of technology.
+            </p>
+
+            <h1>"Toolkit"</h1>
+            {toolkit.map((tool, index) => {
+              return (
+                <>
+                  {" "}
+                  <span className="colored-span" key={index}>
+                    {tool}
+                  </span>
+                </>
+              );
+            })}
           </div>
         </div>
       </div>

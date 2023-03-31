@@ -116,7 +116,7 @@ export default function Projects() {
                   <div className="proj-item-main ">{index + 1}</div>
                   <div className="proj-item-title">{project.title}</div>
                 </div>
-                <div className="proj-item-subtext">{project.desc}</div>
+                <div className="proj-item-subtext">{project.intro}</div>
               </div>
             );
           })}

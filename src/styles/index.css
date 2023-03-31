@@ -181,6 +181,15 @@ body {
   letter-spacing: 0.5em;
 }
 
+.text.about {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.text.about span {
+  padding: 4px;
+}
+
 .text-small {
   font-family: "Roboto";
   font-style: normal;
@@ -414,6 +423,7 @@ form {
   height: 100%;
   padding: 30px;
   cursor: pointer;
+  flex: 1 1 0;
 }
 
 .proj-item-main {
@@ -447,11 +457,11 @@ form {
   font-size: 12px;
   line-height: 215%;
   text-align: center;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.1em;
 }
 
 .colored-span {
-  background-color: #dc5f00;
+  background-color: #dc5f00dc;
   padding: 8px;
 }
 
@@ -623,6 +633,22 @@ form {
 }
 
 @media only screen and (max-width: 1366px) {
+  /* .text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 215%;
+    letter-spacing: 0.5em;
+  }
+   */
+  .text.about {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 200%;
+    text-align: justify;
+  }
+
   .subtext {
     font-size: 26px;
     padding: 2px;
@@ -807,6 +833,9 @@ form {
 }
 
 @media only screen and (max-width: 435px) {
+  .page-container.about {
+    overflow-y: visible;
+  }
   .subtext {
     font-size: 16px;
     line-height: 19px;
