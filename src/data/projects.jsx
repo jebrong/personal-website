@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    title: "Notera",
+    title: "Noterra",
     site: "https://noterra-app.onrender.com/",
     git: "https://github.com/jebrong/mern-productivity-app",
     tags: [
@@ -29,8 +29,8 @@ export const projects = [
       </div>,
     ],
     desc: [
-      <div className="proj-item-subtext" key="b">
-        <span className="proj-item-subtext">
+      <div className="" key="b">
+        <span className="">
           Noterra is a application built with the MERN stack. It is a responsive
           website with authorization using JWT and cookies. The application's
           database is built using MongoDB, which is accessed and managed through
@@ -40,14 +40,20 @@ export const projects = [
           React libraries such as Framer Motion, users interact with the
           interface with beautiful animations making in more appealing.
         </span>
-        ,<span className=" proj-item-subtext colored-span ">This is me</span>,
-        <span className="proj-item-subtext"></span>,
+
+        <span className="proj-item-subtext"></span>
       </div>,
     ],
     img: [
-      "https://cdn.dribbble.com/userupload/5022835/file/original-22c1392de9c19d6caef8e04b592f2565.png?compress=1&resize=752x",
-      "https://images.unsplash.com/photo-1661956601030-fdfb9c7e9e2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1342&q=80",
-      "https://images.unsplash.com/photo-1679506046887-0741ba2ec606?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+      "/images/noterra/1.png",
+      "/images/noterra/2.png",
+      "/images/noterra/3.png",
+      "/images/noterra/4.png",
+      "/images/noterra/5.png",
+      "/images/noterra/6.png",
+      "/images/noterra/7.png",
+      "/images/noterra/8.png",
+      "/images/noterra/9.png",
     ],
   },
   {
@@ -83,8 +89,8 @@ export const projects = [
       </div>,
     ],
     desc: [
-      <div className="proj-item-subtext" key="c">
-        <span className="proj-item-subtext">
+      <div className="" key="c">
+        <span className="">
           Furnitur is a website built using React as the frontend framework and
           offers sorting functionalities to its users. Users can easily sort
           through a list of items based on various criteria such as price, or
@@ -96,14 +102,22 @@ export const projects = [
           easy for users to find the information they need quickly and
           effortlessly.
         </span>
-        ,<span className=" proj-item-subtext colored-span ">This is me</span>,
         <span className="proj-item-subtext"></span>,
       </div>,
     ],
     img: [
-      "https://cdn.dribbble.com/userupload/5022835/file/original-22c1392de9c19d6caef8e04b592f2565.png?compress=1&resize=752x",
-      "https://images.unsplash.com/photo-1661956601030-fdfb9c7e9e2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1342&q=80",
-      "https://images.unsplash.com/photo-1679506046887-0741ba2ec606?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+      "/images/furnitur/1.png",
+      "/images/furnitur/2.png",
+      "/images/furnitur/3.png",
+      "/images/furnitur/4.png",
+      "/images/furnitur/5.png",
+      "/images/furnitur/6.png",
+      "/images/furnitur/7.png",
+      "/images/furnitur/8.png",
+      "/images/furnitur/9.png",
+      "/images/furnitur/10.png",
+      "/images/furnitur/11.png",
+      "/images/furnitur/12.png",
     ],
   },
   {
@@ -139,8 +153,8 @@ export const projects = [
       </div>,
     ],
     desc: [
-      <div className="proj-item-subtext" key="a">
-        <span className="proj-item-subtext">
+      <div className="" key="a">
+        <span className="">
           This landing website is created using React and employs simple
           TypeScript features to enhance the user experience. The homepage
           features an eye-catching hero section that draws the user's attention
@@ -153,14 +167,15 @@ export const projects = [
           provides an excellent introduction to its business or service while
           ensuring a smooth and enjoyable user experience.
         </span>
-        ,<span className=" proj-item-subtext colored-span ">This is me</span>,
         <span className="proj-item-subtext"></span>,
       </div>,
     ],
     img: [
-      "https://cdn.dribbble.com/userupload/5022835/file/original-22c1392de9c19d6caef8e04b592f2565.png?compress=1&resize=752x",
-      "https://images.unsplash.com/photo-1661956601030-fdfb9c7e9e2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1342&q=80",
-      "https://images.unsplash.com/photo-1679506046887-0741ba2ec606?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+      "/images/arch/1.png",
+      "/images/arch/2.png",
+      "/images/arch/3.png",
+      "/images/arch/4.png",
+      "/images/arch/5.png",
     ],
   },
 ];

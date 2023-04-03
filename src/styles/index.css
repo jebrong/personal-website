@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import "./nav.css";
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px red inset !important;
-  -webkit-text-fill-color: orange !important;
-}
-input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 30px violet inset !important;
-  -webkit-text-fill-color: green !important;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -265,14 +254,19 @@ body {
 .box-container {
   position: absolute;
 }
+.box-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .box-secondary-1 {
-  height: 250px;
-  width: 250px;
+  height: 220px;
+  width: 220px;
   background-color: #e32017;
   position: absolute;
-  left: -80px;
-  top: -80px;
+  left: -40px;
+  top: -40px;
 }
 .box-secondary-2 {
   height: 330px;
@@ -283,17 +277,14 @@ body {
   bottom: -50px;
 }
 .box-primary {
-  height: 380px;
-  width: 380px;
+  height: 320px;
+  width: 320px;
   background-color: #0e1111;
   /* position: absolute; */
   z-index: 222;
   position: relative;
   transform-style: preserve-3d;
   color: #eeeeee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .subtext-2 {
@@ -314,7 +305,7 @@ contact-form {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 214.69%;
 
   letter-spacing: 0.5em;
@@ -327,16 +318,20 @@ contact-form {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 214.69%;
   letter-spacing: 0.5em;
+}
+
+.message-container textarea {
+  height: 200px;
 }
 
 .contact-form input::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 214.69%;
   letter-spacing: 0.5em;
   color: #5a5959;
@@ -462,7 +457,7 @@ form {
 
 .colored-span {
   background-color: #dc5f00dc;
-  padding: 8px;
+  padding: 4px;
 }
 
 .page-container.single {
@@ -472,11 +467,12 @@ form {
 .images-container {
   display: flex;
   margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .image-container img {
-  height: 200px;
-  width: 200px;
+  height: 80px;
+  width: 80px;
   object-fit: cover;
   cursor: pointer;
 }
@@ -490,8 +486,8 @@ form {
 
 .selected-image {
   width: 100%;
-  object-fit: cover;
-  height: 700px;
+  object-fit: contain;
+  height: auto;
 }
 
 .image-btn {
@@ -500,25 +496,40 @@ form {
   width: 100px;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 .image-btn.back {
   left: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0) 85%
-  );
+
   transition: all 0.5s;
 }
 
 .image-btn.next {
   right: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 15%,
-    rgba(0, 0, 0, 0.2) 100%
-  );
+
   transition: all 0.5s;
+}
+
+.overlay {
+  background-color: #0e111141;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlighted-image-container {
+  position: fixed;
+  width: 80vw;
+}
+.highlighted-image-container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .image-btn.back:hover {
@@ -654,7 +665,7 @@ form {
     padding: 2px;
   }
   .maintext {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 112px;
     line-height: 95px;
     letter-spacing: -0.005em;
@@ -821,12 +832,6 @@ form {
     padding: 1px;
   }
 
-  .image-container img {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-  }
-
   .box-wrapper {
     padding-top: 0px;
   }
@@ -966,13 +971,12 @@ form {
   }
 
   .image-container img {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
+    height: 50px;
+    width: 50px;
   }
   .selected-image {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     height: 400px;
   }
 

@@ -5,7 +5,7 @@ const initialState = {
   openNav: false,
   singleProject: null,
   singleImages: [],
-
+  openImage: true,
   selectedImage: "",
   allProjects: projects,
 };
@@ -54,6 +54,10 @@ const utilsSlice = createSlice({
       const { payload } = action;
       state.selectedImage = payload;
     },
+    toggleOpenImage: (state) => {
+      state.openImage = !state.openImage;
+      console.log(state.openImage);
+    },
   },
 });
 
@@ -64,4 +68,5 @@ export const {
   prevSingleImage,
   nextSingleImage,
   clickSingleImage,
+  toggleOpenImage,
 } = utilsSlice.actions;

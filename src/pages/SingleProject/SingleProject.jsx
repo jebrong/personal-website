@@ -14,13 +14,14 @@ import {
   prevSingleImage,
   nextSingleImage,
   clickSingleImage,
+  toggleOpenImage,
 } from "../../features/utils/utilsSlice";
 import { useEffect } from "react";
 
 export default function Projects() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { allProjects, singleProject, singleImages, selectedImage } =
+  const { allProjects, singleProject, singleImages, selectedImage, openImage } =
     useSelector((store) => store.utils);
 
   return singleProject ? (
@@ -30,8 +31,6 @@ export default function Projects() {
       exit={{ opacity: 1 }}
       className="page-container single"
     >
-      <Nav></Nav>
-      <NavButton></NavButton>
       <div className="page-body ">
         <div className="single-proj-container">
           <div className="back" onClick={() => navigate("/projects")}>
@@ -49,7 +48,6 @@ export default function Projects() {
               </a>
             </div>
           </div>
-
           {/* desc */}
           <div className="tag-container">
             <span className="tag-title">TAGS:</span>
@@ -85,9 +83,15 @@ export default function Projects() {
           </div>
 
           {/* selected image */}
-
           <div className="selected-image-container">
-            <img src={selectedImage} alt="" className="selected-image" />
+            <img
+              src={selectedImage}
+              alt=""
+              className="selected-image"
+              onClick={() => {
+                dispatch(toggleOpenImage());
+              }}
+            />
             <button
               className="image-btn back"
               onClick={() => {
@@ -111,8 +115,4 @@ export default function Projects() {
   ) : (
     <Navigate to="/projects"></Navigate>
   );
-
-  // return (
-
-  // );
 }

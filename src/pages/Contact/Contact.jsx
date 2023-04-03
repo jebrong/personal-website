@@ -110,9 +110,10 @@ export default function Contact() {
                 setText("show");
               }}
             >
-              Lorem ipsum dolor sit amet
-              <span className="colored-span ">This is me</span>. Ornare sed odio
-              interdum adipiscing quis consequat a pulvinar{" "}
+              Feel free to send me an email and discuss future work. You can
+              also contact me here or manually message me here:
+              <span className="colored-span ">syjanille@gmail.com</span> or
+              <span className="colored-span ">+639268524297</span>
             </div>
           </div>
 

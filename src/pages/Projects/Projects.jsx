@@ -89,9 +89,12 @@ export default function Projects() {
                 setText("show");
               }}
             >
-              Lorem ipsum dolor sit amet
-              <span className="colored-span ">This is me</span>. Ornare sed odio
-              interdum adipiscing quis consequat a pulvinar{" "}
+              These <span className="colored-span">selected</span> projects
+              showcase my skills in various areas of web development, such as
+              <span className="colored-span">
+                front-end , back-end , database management, and full-stack
+                development.
+              </span>
             </div>
           </div>
         </div>

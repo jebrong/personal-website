@@ -87,7 +87,7 @@ export default function About() {
                 "About"
               </div>
             </div>
-            <div
+            {/* <div
               className="subtext-3"
               onMouseEnter={() => {
                 setText("zoom");
@@ -95,10 +95,22 @@ export default function About() {
               onMouseLeave={() => {
                 setText("show");
               }}
-            >
-              Lorem ipsum dolor sit amet
-              <span className="colored-span ">This is me</span>. Ornare sed odio
-              interdum adipiscing quis consequat a pulvinar{" "}
+            ></div> */}
+
+            <div className="single-project-links-container ">
+              <a
+                className="single-project-link git"
+                href="https://github.com/jebrong"
+              >
+                visit github
+              </a>
+
+              <a
+                className="single-project-link site"
+                href="https://github.com/jebrong"
+              >
+                visit linkedin
+              </a>
             </div>
           </div>
         </div>

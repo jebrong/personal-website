@@ -79,7 +79,10 @@ export default function Home() {
                 right: 10,
                 bottom: 10,
               }}
-            ></m.div>
+            >
+              {" "}
+              <h1 className="text">"move"</h1>
+            </m.div>
             <m.div
               className="box-secondary-2"
               variants={v1Logo}
@@ -92,7 +95,9 @@ export default function Home() {
                 right: 10,
                 bottom: 10,
               }}
-            ></m.div>
+            >
+              <h1 className="text">"move"</h1>
+            </m.div>
           </div>
         </div>
         <div className="home-nav">
