@@ -2,7 +2,7 @@ import Nav from "../../components/Nav";
 
 import NavButton from "../../components/NavButton";
 import { motion as m } from "framer-motion";
-// import { pageAnimationLeft } from "../../animations/animations";
+import { pageAnimationLeft } from "../../animations/animations";
 import { useSelector, useDispatch } from "react-redux";
 
 import { useNavigate } from "react-router-dom";
@@ -64,9 +64,10 @@ export default function About() {
 
   return (
     <m.div
-      initial={{ x: "-100%" }}
-      animate={{ x: 0, transition: { duration: 0.5 } }}
-      exit={{ opacity: 1 }}
+      variants={pageAnimationLeft}
+      initial="hidden"
+      animate="show"
+      exit="exit"
       className="page-container about"
     >
       <Nav></Nav>
@@ -87,15 +88,6 @@ export default function About() {
                 "About"
               </div>
             </div>
-            {/* <div
-              className="subtext-3"
-              onMouseEnter={() => {
-                setText("zoom");
-              }}
-              onMouseLeave={() => {
-                setText("show");
-              }}
-            ></div> */}
 
             <div className="single-project-links-container ">
               <a
@@ -189,12 +181,9 @@ export default function About() {
             <h1>"Toolkit"</h1>
             {toolkit.map((tool, index) => {
               return (
-                <>
-                  {" "}
-                  <span className="colored-span" key={index}>
-                    {tool}
-                  </span>
-                </>
+                <span className="colored-span" key={index}>
+                  {tool}
+                </span>
               );
             })}
           </div>

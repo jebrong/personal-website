@@ -2,7 +2,11 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion as m, AnimatePresence } from "framer-motion";
-import { v1Logo, buttonHoverTap } from "../../animations/animations";
+import {
+  v1Logo,
+  buttonHoverTap,
+  pageAnimationLeft,
+} from "../../animations/animations";
 
 import { useState, useEffect } from "react";
 import Cursor from "../../components/Cursor";
@@ -13,9 +17,10 @@ export default function Home() {
 
   return (
     <m.div
-      initial={{ x: "-100%" }}
-      animate={{ x: 0, transition: { duration: 0.5 } }}
-      exit={{ opacity: 1 }}
+      variants={pageAnimationLeft}
+      initial="hidden"
+      animate="show"
+      exit="exit"
       className="page-container"
     >
       <div className="title-container home">

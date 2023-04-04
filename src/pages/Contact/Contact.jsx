@@ -1,17 +1,11 @@
 import { useRef, useState, useEffect } from "react";
-import { useSelector } from "react-redux";
-import { AnimatePresence, motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 import { pageAnimationLeft, buttonHoverTap } from "../../animations/animations";
-
 import emailjs from "@emailjs/browser";
 import Nav from "../../components/Nav";
 import NavButton from "../../components/NavButton";
-import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
-  const navigate = useNavigate();
-  const { openNav } = useSelector((store) => store.utils);
-
   const [status, setStatus] = useState(null);
   const form = useRef();
   const username = useRef();
@@ -39,7 +33,6 @@ export default function Contact() {
         }
       );
   };
-
   const [mouseXY, setMouseXY] = useState({ x: -50, y: -50 });
   const [text, setText] = useState("show");
 
@@ -71,13 +64,10 @@ export default function Contact() {
 
   return (
     <m.div
-      // variants={pageAnimationLeft}
-      // initial="hidden"
-      // animate="show"
-      // exit="exit"
-      initial={{ x: "-100%" }}
-      animate={{ x: 0, transition: { duration: 0.5 } }}
-      exit={{ opacity: 1 }}
+      variants={pageAnimationLeft}
+      initial="hidden"
+      animate="show"
+      exit="exit"
       className="page-container"
     >
       <NavButton></NavButton>
@@ -110,8 +100,7 @@ export default function Contact() {
                 setText("show");
               }}
             >
-              Feel free to send me an email and discuss future work. You can
-              also contact me here or manually message me here:
+              You can also contact me here or manually message me here:
               <span className="colored-span ">syjanille@gmail.com</span> or
               <span className="colored-span ">+639268524297</span>
             </div>

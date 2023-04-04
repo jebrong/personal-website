@@ -1,34 +1,29 @@
-import Nav from "../../components/Nav";
-
-import NavButton from "../../components/NavButton";
-import { motion as m, AnimatePresence } from "framer-motion";
-// import { pageAnimationLeft } from "../../animations/animations";
+import { motion as m } from "framer-motion";
+import { pageAnimationLeft } from "../../animations/animations";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleNav } from "../../features/utils/utilsSlice";
 import { useNavigate, Navigate } from "react-router-dom";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { ImArrowLeft2 } from "react-icons/im";
-
 import {
-  findProject,
   prevSingleImage,
   nextSingleImage,
   clickSingleImage,
   toggleOpenImage,
 } from "../../features/utils/utilsSlice";
-import { useEffect } from "react";
 
 export default function Projects() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { allProjects, singleProject, singleImages, selectedImage, openImage } =
-    useSelector((store) => store.utils);
+  const { singleProject, singleImages, selectedImage } = useSelector(
+    (store) => store.utils
+  );
 
   return singleProject ? (
     <m.div
-      initial={{ x: "-100%" }}
-      animate={{ x: 0, transition: { duration: 0.5 } }}
-      exit={{ opacity: 1 }}
+      variants={pageAnimationLeft}
+      initial="hidden"
+      animate="show"
+      exit="exit"
       className="page-container single"
     >
       <div className="page-body ">
@@ -111,6 +106,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <br />
     </m.div>
   ) : (
     <Navigate to="/projects"></Navigate>

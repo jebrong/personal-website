@@ -1,8 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { AiOutlineClose } from "react-icons/ai";
 import { motion as m, AnimatePresence } from "framer-motion";
-import { pageAnimationLeft, buttonHoverTap } from "../animations/animations";
 import { toggleNav } from "../features/utils/utilsSlice";
 
 export default function Nav() {

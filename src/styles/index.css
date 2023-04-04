@@ -643,16 +643,7 @@ form {
   margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 1366px) {
-  /* .text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 215%;
-    letter-spacing: 0.5em;
-  }
-   */
+@media only screen and (max-width: 1367px) {
   .text.about {
     font-size: 12px;
     letter-spacing: 0.1em;
@@ -666,8 +657,8 @@ form {
   }
   .maintext {
     /* margin-top: 20px; */
-    font-size: 112px;
-    line-height: 95px;
+    font-size: 100px;
+    line-height: 105px;
     letter-spacing: -0.005em;
   }
   .proj-item-subtext {
@@ -875,6 +866,7 @@ form {
   .home-nav {
     align-self: center;
     margin-top: 20px;
+    margin-bottom: 50px;
   }
 
   .home-nav-item__container .text,
@@ -1014,14 +1006,14 @@ form {
     top: -50px;
   }
   .box-secondary-2 {
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
     right: -50px;
     bottom: -50px;
   }
   .box-primary {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 }
 
