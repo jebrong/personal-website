@@ -59,8 +59,8 @@ export const projects = [
   {
     id: 2,
     title: "Furnitur",
-    site: "https://noterra-app.onrender.com/",
-    git: "https://github.com/jebrong/mern-productivity-app",
+    site: "https://furnitur-store.netlify.app/",
+    git: "https://github.com/jebrong/e-commerce-react-tailwind",
     tags: [
       "mern",
       "react",
@@ -123,8 +123,8 @@ export const projects = [
   {
     id: 3,
     title: "Arch.Studio",
-    site: "https://noterra-app.onrender.com/",
-    git: "https://github.com/jebrong/mern-productivity-app",
+    site: "https://archstud.netlify.app/",
+    git: "https://github.com/jebrong/landing-website-arch-stud",
     tags: [
       "mern",
       "react",

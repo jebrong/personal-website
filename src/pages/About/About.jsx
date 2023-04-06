@@ -96,13 +96,6 @@ export default function About() {
               >
                 visit github
               </a>
-
-              <a
-                className="single-project-link site"
-                href="https://github.com/jebrong"
-              >
-                visit linkedin
-              </a>
             </div>
           </div>
         </div>
