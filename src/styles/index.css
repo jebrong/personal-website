@@ -411,7 +411,7 @@ form {
 .proj-container {
   display: flex;
   align-items: center;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .proj-item-container {
@@ -805,6 +805,12 @@ form {
     flex-direction: column;
   }
 
+  .proj-item-title {
+    font-size: 21px;
+    line-height: 214.69%;
+    min-width: 120px;
+  }
+
   .proj-item-container {
     display: flex;
     padding: 0px;
@@ -816,7 +822,7 @@ form {
     font-size: 11px;
     line-height: 150%;
     text-align: left;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
   }
 
   .proj-item-subtext .colored-span {
@@ -825,6 +831,10 @@ form {
 
   .box-wrapper {
     padding-top: 0px;
+  }
+
+  .page-container.single {
+    padding-bottom: 80px;
   }
 }
 
@@ -866,7 +876,7 @@ form {
   .home-nav {
     align-self: center;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .home-nav-item__container .text,
@@ -950,12 +960,18 @@ form {
     border-bottom: solid black 1px;
     align-items: center;
   }
+
+  .proj-item-main {
+    font-size: 90px;
+    line-height: 100px;
+  }
+
   .proj-item-subtext {
     padding-left: 6px;
     font-size: 11px;
     line-height: 150%;
     text-align: left;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
   }
 
   .proj-item-subtext .colored-span {
@@ -976,6 +992,13 @@ form {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .single-project-title {
+    font-size: 66px;
+    line-height: 92px;
+    margin-bottom: 20px;
+  }
+
   .single-project-links-container {
     margin: 0px;
   }
@@ -1000,20 +1023,24 @@ form {
   }
 
   .box-secondary-1 {
-    height: 150px;
-    width: 150px;
-    left: -50px;
-    top: -50px;
+    height: 100px;
+    width: 100px;
+    left: -20px;
+    top: -20px;
   }
   .box-secondary-2 {
-    height: 120px;
-    width: 120px;
-    right: -50px;
-    bottom: -50px;
+    height: 100px;
+    width: 100px;
+    right: -20px;
+    bottom: -20px;
   }
   .box-primary {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
+  }
+
+  .back {
+    font-size: 56px;
   }
 }
 

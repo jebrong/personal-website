@@ -121,6 +121,10 @@
   .nav-text {
     font-size: 135px;
   }
+  .nav-texts {
+    padding-top: 80px;
+    justify-content: flex-start;
+  }
 }
 
 @media only screen and (max-width: 435px) {
