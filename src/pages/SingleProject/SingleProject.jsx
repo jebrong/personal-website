@@ -107,6 +107,13 @@ export default function Projects() {
         </div>
       </div>
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </m.div>
   ) : (
     <Navigate to="/projects"></Navigate>

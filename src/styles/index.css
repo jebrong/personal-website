@@ -179,6 +179,11 @@ body {
   padding: 4px;
 }
 
+.colored-span.toolkit {
+  margin: 2px;
+  display: inline-block;
+}
+
 .text-small {
   font-family: "Roboto";
   font-style: normal;
@@ -600,7 +605,7 @@ form {
   line-height: 215%;
   text-align: justify;
 
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
 
   color: #0e1111;
 }
@@ -641,6 +646,11 @@ form {
 
 .tag-container {
   margin-bottom: 40px;
+}
+
+.footer {
+  height: 809px;
+  width: 100vw;
 }
 
 @media only screen and (max-width: 1367px) {

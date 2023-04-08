@@ -24,8 +24,8 @@ export default function About() {
     "typescript",
     "nodeJS",
     "express",
-    "mongoDB",
     "postman",
+    "mongoDB",
     "git",
     "sass",
     "framer-motion",
@@ -172,13 +172,15 @@ export default function About() {
             </p>
 
             <h1>"Toolkit"</h1>
-            {toolkit.map((tool, index) => {
-              return (
-                <span className="colored-span" key={index}>
-                  {tool}
-                </span>
-              );
-            })}
+            <div className="toolkit-wrapper">
+              {toolkit.map((tool, index) => {
+                return (
+                  <div className="colored-span toolkit" key={index}>
+                    {tool}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
