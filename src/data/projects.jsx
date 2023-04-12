@@ -31,14 +31,15 @@ export const projects = [
     desc: [
       <div className="" key="b">
         <span className="">
-          Noterra is a application built with the MERN stack. It is a responsive
-          website with authorization using JWT and cookies. The application's
-          database is built using MongoDB, which is accessed and managed through
-          the back-end logic of NodeJS with Express. Users interact with the
-          front-end React components of the app to easily view, create, modify
-          and remove data from the database. Also with the use of third-party
-          React libraries such as Framer Motion, users interact with the
-          interface with beautiful animations making in more appealing.
+          Noterra is an application built with the MERN stack. It is a
+          responsive website with authorization using JWT and cookies. The
+          application's database is built using MongoDB, which is accessed and
+          managed through the back-end logic of NodeJS with Express. Users
+          interact with the front-end React components of the app to easily
+          view, create, modify, and remove data from the database. Also with the
+          use of third-party React libraries such as Framer Motion, users
+          interact with the interface with beautiful animations making it more
+          appealing.
         </span>
 
         <span className="proj-item-subtext"></span>
@@ -76,16 +77,13 @@ export const projects = [
         <span className="proj-item-subtext">
           Furnitur is a website built using
         </span>
-        ,
         <span className=" proj-item-subtext colored-span ">
           React, Tailwind with Auth0
         </span>
-        ,
         <span className="proj-item-subtext">
           and offers sorting functionalities to its users. Users can easily sort
           through a list of items.
         </span>
-        ,
       </div>,
     ],
     desc: [
@@ -102,7 +100,7 @@ export const projects = [
           easy for users to find the information they need quickly and
           effortlessly.
         </span>
-        <span className="proj-item-subtext"></span>,
+        <span className="proj-item-subtext"></span>
       </div>,
     ],
     img: [
@@ -141,9 +139,8 @@ export const projects = [
         <span className="proj-item-subtext">
           This landing website is created using React and employs simple
         </span>
-        <span className=" proj-item-subtext colored-span ">TypeScript</span>
+        <span className=" proj-item-subtext colored-span ">TypeScript </span>
         <span className="proj-item-subtext">
-          {" "}
           features to enhance the user experience. This website also uses{" "}
         </span>
         ,<span className=" proj-item-subtext colored-span "> Bootstrap </span>
@@ -167,7 +164,7 @@ export const projects = [
           provides an excellent introduction to its business or service while
           ensuring a smooth and enjoyable user experience.
         </span>
-        <span className="proj-item-subtext"></span>,
+        <span className="proj-item-subtext"></span>
       </div>,
     ],
     img: [
