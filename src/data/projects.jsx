@@ -10,6 +10,8 @@ export const projects = [
       "node",
       "express",
       "mongoDB",
+      "cloudinary",
+      "JWT",
       "javascript",
       "html",
       "css",
@@ -62,16 +64,7 @@ export const projects = [
     title: "Furnitur",
     site: "https://furnitur-store.netlify.app/",
     git: "https://github.com/jebrong/e-commerce-react-tailwind",
-    tags: [
-      "mern",
-      "react",
-      "node",
-      "express",
-      "mongoDB",
-      "javascript",
-      "html",
-      "css",
-    ],
+    tags: ["react", "tailwind", "redux", "auth0", "javascript", "html", "css"],
     intro: [
       <div className="proj-item-subtext" key="a">
         <span className="proj-item-subtext">
@@ -124,11 +117,11 @@ export const projects = [
     site: "https://archstud.netlify.app/",
     git: "https://github.com/jebrong/landing-website-arch-stud",
     tags: [
-      "mern",
       "react",
-      "node",
-      "express",
-      "mongoDB",
+      "typescript",
+      "react-bootstrap",
+      "bootstrap",
+      "redux",
       "javascript",
       "html",
       "css",
