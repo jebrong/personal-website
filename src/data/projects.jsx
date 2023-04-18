@@ -32,6 +32,7 @@ export const projects = [
     ],
     desc: [
       <div className="" key="b">
+        <h1>General Information</h1>
         <span className="">
           Noterra is an application built with the MERN stack. It is a
           responsive website with authorization using JWT and cookies. The
@@ -43,8 +44,12 @@ export const projects = [
           interact with the interface with beautiful animations making it more
           appealing.
         </span>
-
-        <span className="proj-item-subtext"></span>
+        <h1>Features</h1>
+        <div>- Responsive website layout across multiple devices</div>
+        <div>- Page and component animations</div>
+        <div>- CRUD app with NoSQL database</div>
+        <div>- JSON Web Token for authentication</div>
+        <h1>Screenshots</h1>
       </div>,
     ],
     img: [
@@ -81,6 +86,7 @@ export const projects = [
     ],
     desc: [
       <div className="" key="c">
+        <h1>General Information</h1>
         <span className="">
           Furnitur is a website built using React as the frontend framework and
           offers sorting functionalities to its users. Users can easily sort
@@ -93,7 +99,12 @@ export const projects = [
           easy for users to find the information they need quickly and
           effortlessly.
         </span>
-        <span className="proj-item-subtext"></span>
+        <h1>Features</h1>
+        <div>- Responsive website layout across multiple devices</div>
+        <div>- Page and component animations</div>
+        <div>- Dedicated dark mode that saves your preferences.</div>
+        <div>- Sorting and filtering</div>
+        <h1>Screenshots</h1>
       </div>,
     ],
     img: [
@@ -144,6 +155,7 @@ export const projects = [
     ],
     desc: [
       <div className="" key="a">
+        <h1>General Information</h1>
         <span className="">
           This landing website is created using React and employs simple
           TypeScript features to enhance the user experience. The homepage
@@ -157,7 +169,11 @@ export const projects = [
           provides an excellent introduction to its business or service while
           ensuring a smooth and enjoyable user experience.
         </span>
-        <span className="proj-item-subtext"></span>
+        <h1>Features</h1>
+        <div>- Responsive website layout across multiple devices</div>
+        <div>- Page and component animations</div>
+        <div>- House estimate calculator</div>
+        <h1>Screenshots</h1>
       </div>,
     ],
     img: [
