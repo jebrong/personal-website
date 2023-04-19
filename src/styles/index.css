@@ -599,6 +599,12 @@ form {
   background-color: #dc5f00;
 }
 
+.single-project-link.site:hover,
+.single-project-link.git:hover {
+  scale: 1.05;
+  transition: all 0.2s;
+}
+
 .single-project-desc {
   font-weight: 400;
   font-size: 14px;
