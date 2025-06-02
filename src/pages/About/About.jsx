@@ -117,66 +117,21 @@ export default function About() {
             className="text about"
           >
             <p>
-              As a licensed architect with a passion for technology, I am now
-              proudly paving the way to pursue a career in{" "}
-              <span className="colored-span">web development</span> . Throughout
-              my training and professional experience, I have developed a{" "}
-              <span className="colored-span">
-                meticulous eye for detail, an aptitude for problem-solving, and
-                a creative approach to design,
-              </span>
-              which I believe is highly applicable to web development. I am
-              eager to take on new challenges and expand my skillset in a field
-              that combines my technical expertise with my imaginative spirit.
-              Through my work, I aim to create
-              <span className="colored-span">
-                innovative and user-friendly digital solutions{" "}
-              </span>{" "}
-              that are both aesthetically pleasing and functionally sound.
-            </p>
-            <p>
-              With my background in design, I found that I had a natural
-              inclination towards the creative and technical aspects of web
-              development. I started to teach myself how to code, exploring
-              different programming languages, frameworks, and databases. I even
-              began working on my own projects, building websites and apps for
-              friends and family.
+              I’m passionate about <span className="colored-span">web development</span> and constantly exploring new ways to build <span className="colored-span">user-friendly</span>, efficient digital experiences. Over time, I’ve developed a <span className="colored-span">meticulous eye for detail</span> and a <span className="colored-span">problem-solving mindset</span> that help me tackle complex challenges while keeping designs elegant and functional. I’m always eager to learn and grow, making every project an opportunity to sharpen my skills and deliver quality results.
             </p>
 
             <p>
-              As I further immersed myself in web development, I began to
-              appreciate the similarities between architecture and coding. Both
-              require{" "}
-              <span className="colored-span">
-                a keen eye for detail, problem-solving skills, and the ability
-                to bring complex ideas to life.
-              </span>
-              I also found that my skills in{" "}
-              <span className="colored-span">
-                project management, team collaboration, and client communication
-              </span>
-              were transferrable to the tech industry.
+              My journey started with a curiosity about how websites and apps work, which quickly turned into a passion for coding. Through <span className="colored-span">self-study</span>, I dived into programming languages, frameworks, and tools like React, Flutter, and TypeScript. I built small projects for myself and friends, learning by doing and constantly improving. This hands-on experience taught me how to write clean, maintainable code and adapt quickly to new tech.
             </p>
 
             <p>
-              Today, I am a licensed architect pursuing a career in web
-              development. I lean to work as a{" "}
-              <span className="colored-span">front-end developer </span> ,
-              focusing on creating
-              <span className="colored-span">
-                user-friendly websites, elegant designs, and top-notch user
-                experiences.
-              </span>
-              I am passionate about using my knowledge and skills to create
-              digital solutions that not only look aesthetically pleasing but
-              also function seamlessly and drive results for my clients.
+              I’ve come to appreciate how my background in design shapes my approach to frontend development. It gives me a strong sense of <span className="colored-span">visual aesthetics</span> and <span className="colored-span">user experience</span>, making it easier to create interfaces that are not only functional but also enjoyable to use. I also value teamwork and communication, collaborating closely with others to ensure smooth project delivery and shared success.
             </p>
+
             <p>
-              My journey from architecture to web development has been a
-              challenging yet fulfilling one. I am excited to see where this
-              path takes me and look forward to contributing to the
-              ever-evolving world of technology.
+              Today, I’m focused on growing as a <span className="colored-span">frontend developer</span>, driven by the excitement of crafting digital solutions that look great and work seamlessly. I’m excited for the challenges ahead and motivated to contribute meaningfully to the ever-changing world of technology.
             </p>
+
 
             <h1>"Toolkit"</h1>
             <div className="toolkit-wrapper">
