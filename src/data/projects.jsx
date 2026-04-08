@@ -184,4 +184,45 @@ export const projects = [
       "/images/arch/5.png",
     ],
   },
+  {
+    id: 4,
+    title: "Property Pulse",
+    site: "https://property-pulse-beta-pearl.vercel.app/",
+    git: "https://github.com/jebrong/property-2026",
+    tags: ["Next.js", "React", "MongoDB", "Cloudinary", "Tailwind"],
+    intro: [
+      <div className="proj-item-subtext" key="a">
+        <span className="proj-item-subtext">
+          Property Pulse is a property management application built with
+        </span>
+        <span className=" proj-item-subtext colored-span ">
+          Next.js, React, MongoDB, Cloudinary, and Tailwind CSS.
+        </span>
+      </div>,
+    ],
+    desc: [
+      <div className="" key="b">
+        <h1>General Information</h1>
+        <span className="">
+          Property Pulse is a comprehensive property management platform
+          developed using Next.js for server-side rendering, React for dynamic
+          user interfaces, MongoDB for data storage, Cloudinary for image
+          management, and Tailwind CSS for styling. It provides users with tools
+          to list, manage, and view properties efficiently.
+        </span>
+        <h1>Features</h1>
+        <div>- Responsive design across all devices</div>
+        <div>- Property listing and management</div>
+        <div>- Image upload and management with Cloudinary</div>
+        <div>- User authentication and authorization</div>
+        <h1>Screenshots</h1>
+      </div>,
+    ],
+    img: [
+      "/images/pulse/Details.png",
+      "/images/pulse/EditForm.png",
+      "/images/pulse/Homepage.png",
+      "/images/pulse/PropertiesPage.png",
+    ],
+  },
 ];

@@ -15,7 +15,7 @@ export default function Projects() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { singleProject, singleImages, selectedImage } = useSelector(
-    (store) => store.utils
+    (store) => store.utils,
   );
 
   return singleProject ? (
@@ -35,10 +35,20 @@ export default function Projects() {
           <div className="single-project-title-container">
             <div className="single-project-title">{singleProject.title}</div>
             <div className="single-project-links-container">
-              <a className="single-project-link site" href={singleProject.site}>
+              <a
+                className="single-project-link site"
+                href={singleProject.site}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 visit site
               </a>
-              <a className="single-project-link git" href={singleProject.git}>
+              <a
+                className="single-project-link git"
+                href={singleProject.git}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 visit github
               </a>
             </div>
